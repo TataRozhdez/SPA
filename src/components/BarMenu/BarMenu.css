@@ -1,0 +1,27 @@
+.barMenu {
+  width: 100vw;
+  padding: 0 0.938rem;
+}
+
+.barMenu-slider {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.barMenu-slider img {
+  max-width: 340px;
+  max-height: 300px;
+}
+
+.barMenu .slick-list {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .barMenu .slick-prev:before {
+  content: 'ᐸ';
+} */
+/*  */

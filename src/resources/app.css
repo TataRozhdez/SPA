@@ -1,0 +1,56 @@
+.app {
+  width: 100vw;
+  height: fit-content;
+}
+
+.land {
+  background: center / cover no-repeat url('./img/background.jpg');
+  width: 100vw;
+  height: 97.8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.land-logo {
+  width: 52.361vw;
+}
+
+.btn-group-language {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translate(50%, 0%);
+}
+
+.btn-group-language button {
+  font-size: 1.32rem;
+}
+
+.btn-group-language button:first-child {
+  margin-right: 1rem;
+}
+
+.btn-group-language button:hover {
+  text-shadow: 0px 0px 15px #cecece;
+}
+
+.land-leaf-decor-right {
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+}
+
+.land-leaf-decor-left {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+
+.land-leaf-decor-left,
+.land-leaf-decor-right {
+  max-width: 272px;
+  min-width: 162px;
+  z-index: 5;
+}
