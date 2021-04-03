@@ -10,14 +10,15 @@
 }
 
 .slider1 {
-  width: 50%;
+  min-width: 475px;
+  width: 38.542vw;
   height: 350px;
 }
 
 .slider1 img,
 .slider1 div {
   border-radius: 1.5rem;
-  height: 350px;
+  height: 100%;
 }
 
 .slick-dots {
@@ -31,8 +32,8 @@
 }
 
 .about-txt {
-  height: 350px;
-  width: 45%;
+  width: 39vw;
+  min-width: 340px;
   border-top: 0.25rem solid #fff;
   border-bottom: 0.25rem solid #fff;
   padding: 1.25rem 0.75rem;
@@ -50,4 +51,21 @@
   font-size: 1.125rem;
   line-height: 1.25rem;
   padding-top: 0.25rem;
+}
+
+@media (max-width: 961px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .slider1,
+  .about-txt {
+    width: 90vw;
+    min-width: 90vw;
+  }
+
+  .slider1 {
+    height: 450px;
+    margin-bottom: 2rem;
+  }
 }

@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react'
 import AppContext from './context/appContext'
 import { About } from './components/About/About'
 import { BarMenu } from './components/BarMenu/BarMenu'
+import { Contact } from './components/Contact/Contact'
 
 import logoImg from './resources/img/logo.svg'
 import mapImg from './resources/img/map.svg'
@@ -10,6 +11,7 @@ import instaImg from './resources/img/insta.svg'
 import phoneImg from './resources/img/phone.svg'
 import rightLeafImg from './resources/img/right-leaf.png'
 import leftLeafImg from './resources/img/left-leaf.png'
+import footImg from './resources/img/footer.png'
 
 import './resources/app.css'
 
@@ -82,6 +84,8 @@ export const App = () => {
 
       <About />
       <BarMenu />
+      <Contact />
+      <img className='footer' src={footImg} alt='Hero leaf' />
     </div>
   )
 }

@@ -22,6 +22,7 @@ export const BarMenu = () => {
 
   return (
     <div className='barMenu'>
+      <div className='barMenu-filter' />
       <Slider {...settings2}>
         <img src={slide21} alt='Coctail 1' />
         <img src={slide22} alt='Coctail 2' />
@@ -31,6 +32,14 @@ export const BarMenu = () => {
         <img src={slide26} alt='Coctail 6' />
         <img src={slide27} alt='Coctail 7' />
       </Slider>
+      <a
+        className='barMenu-menuOpen'
+        href='http://zebralounge.com.ua/menu'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        переглянути меню
+      </a>
     </div>
   )
 }

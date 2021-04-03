@@ -1,6 +1,8 @@
 .app {
   width: 100vw;
   height: fit-content;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .land {
@@ -21,7 +23,6 @@
   position: absolute;
   top: 10%;
   right: 10%;
-  transform: translate(50%, 0%);
 }
 
 .btn-group-language button {
@@ -53,4 +54,29 @@
   max-width: 272px;
   min-width: 162px;
   z-index: 5;
+  width: 18.9vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  left: -2%;
+  width: 110vw;
+}
+
+@media (max-width: 961px) {
+  .land-logo {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 780px) {
+  .land-leaf-decor-left,
+  .land-leaf-decor-right {
+    width: 32.9vw;
+  }
+  .land-logo {
+    width: 80vw;
+  }
 }
