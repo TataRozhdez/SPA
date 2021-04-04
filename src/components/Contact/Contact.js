@@ -14,38 +14,52 @@ export const Contact = () => {
     <div className='contact'>
       <div className='contact-txt'>
         <h1>КОНТАКТИ</h1>
-        <p>
-          <img className='contact-txt-icon' src={clockImg} alt='Working time' />
-          <span>14:00 - 00:00 (ПН-НЕД)</span>
-        </p>
-        <a
-          href='https://www.instagram.com/zebraloungekiev/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <img className='contact-txt-icon' src={mapImg} alt='Google maps' />
-          вул. Михайлівська 22Б
-        </a>
-        <a href='tel:+38050701344'>
-          <img className='contact-txt-icon' src={phoneImg} alt='Zebra phone' />
-          +38 (050) 701 0344
-        </a>
-        <a
-          href='https://www.instagram.com/zebraloungekiev/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <img className='contact-txt-icon' src={instaImg} alt='Instagam' />
-          @zebraloungekiev
-        </a>
-        <a
-          href='https://www.facebook.com/zebraloungekiev/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <img className='contact-txt-icon' src={facebookImg} alt='Facebook' />
-          Zebra Lounge
-        </a>
+        <div className='text-right'>
+          <p>
+            <img
+              className='contact-txt-icon'
+              src={clockImg}
+              alt='Working time'
+            />
+            <span>14:00 - 00:00 (ПН-НЕД)</span>
+          </p>
+          <a
+            href='https://www.instagram.com/zebraloungekiev/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img className='contact-txt-icon' src={mapImg} alt='Google maps' />
+            вул. Михайлівська 22Б
+          </a>
+          <a href='tel:+38050701344'>
+            <img
+              className='contact-txt-icon'
+              src={phoneImg}
+              alt='Zebra phone'
+            />
+            +38 (050) 701 0344
+          </a>
+          <a
+            href='https://www.instagram.com/zebraloungekiev/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img className='contact-txt-icon' src={instaImg} alt='Instagam' />
+            @zebraloungekiev
+          </a>
+          <a
+            href='https://www.facebook.com/zebraloungekiev/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img
+              className='contact-txt-icon'
+              src={facebookImg}
+              alt='Facebook'
+            />
+            Zebra Lounge
+          </a>
+        </div>
       </div>
       <div
         className='google-maps'

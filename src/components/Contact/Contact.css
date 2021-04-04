@@ -54,6 +54,7 @@
 @media (max-width: 961px) {
   .contact {
     flex-direction: column;
+    margin-bottom: 5rem;
   }
 
   .google-maps,
@@ -63,7 +64,35 @@
   }
 
   .contact-txt {
-    margin-bottom: 2rem;
+    margin-right: 0;
     align-items: center;
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .google-maps {
+    height: 200px;
+  }
+}
+
+@media (max-width: 505px) {
+  .contact-txt {
+    height: fit-content;
+  }
+
+  .contact-txt p,
+  .contact-txt a {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact-txt h1 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .contact-txt-icon {
+    width: 1.5rem;
   }
 }

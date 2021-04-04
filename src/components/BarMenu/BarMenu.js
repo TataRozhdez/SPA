@@ -10,6 +10,13 @@ import slide27 from '../../resources/img/slide2-7.png'
 import './BarMenu.css'
 
 export const BarMenu = () => {
+  const screenWidth = window.screen.width
+
+  let slidesToShow = 3
+
+  if (screenWidth < 779) slidesToShow = 2
+  if (screenWidth < 625) slidesToShow = 1
+
   const settings2 = {
     lazyLoad: true,
     className: 'barMenu-slider',
@@ -17,7 +24,7 @@ export const BarMenu = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
   }
 
   return (

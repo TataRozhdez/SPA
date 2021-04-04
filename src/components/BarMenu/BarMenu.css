@@ -35,7 +35,7 @@
 }
 
 .barMenu .slick-list {
-  height: 350px;
+  text-align: center;
 }
 
 .barMenu .slick-prev:before {
@@ -56,4 +56,12 @@
   border-bottom: 0.25rem solid #fff;
   padding: 1.25rem 0.75rem 0.85rem;
   margin: 1.125rem auto 3.9rem;
+}
+
+@media (max-width: 505px) {
+  .barMenu-menuOpen {
+    font-size: 1.2rem;
+    padding: 1rem 0.75rem 0.5rem;
+    margin: 1.125rem auto 2.9rem;
+  }
 }

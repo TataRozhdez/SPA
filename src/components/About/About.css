@@ -12,13 +12,11 @@
 .slider1 {
   min-width: 475px;
   width: 38.542vw;
-  height: 350px;
 }
 
 .slider1 img,
 .slider1 div {
   border-radius: 1.5rem;
-  height: 100%;
 }
 
 .slick-dots {
@@ -56,6 +54,7 @@
 @media (max-width: 961px) {
   .about {
     flex-direction: column;
+    padding: 3.186rem 0.938rem 0.5rem;
   }
 
   .slider1,
@@ -64,8 +63,11 @@
     min-width: 90vw;
   }
 
+  .about-txt {
+    border-bottom: none;
+  }
+
   .slider1 {
-    height: 450px;
     margin-bottom: 2rem;
   }
 }

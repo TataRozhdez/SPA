@@ -51,10 +51,9 @@
 
 .land-leaf-decor-left,
 .land-leaf-decor-right {
-  max-width: 272px;
   min-width: 162px;
   z-index: 5;
-  width: 18.9vw;
+  width: 21.9vw;
 }
 
 .footer {
@@ -63,6 +62,21 @@
   right: -10%;
   left: -2%;
   width: 110vw;
+}
+
+@media (max-width: 1100px) {
+  .land-leaf-decor-left,
+  .land-leaf-decor-right {
+    width: 28.9vw;
+  }
+
+  .land-leaf-decor-left {
+    bottom: -10%;
+  }
+
+  .land-leaf-decor-right {
+    bottom: -14%;
+  }
 }
 
 @media (max-width: 961px) {
@@ -74,9 +88,19 @@
 @media (max-width: 780px) {
   .land-leaf-decor-left,
   .land-leaf-decor-right {
-    width: 32.9vw;
+    width: 36.9vw;
   }
   .land-logo {
     width: 80vw;
+  }
+}
+
+@media (max-width: 505px) {
+  .land-leaf-decor-left {
+    /* bottom: -15%; */
+  }
+
+  .land-leaf-decor-right {
+    /* bottom: -11%; */
   }
 }
