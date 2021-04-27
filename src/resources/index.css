@@ -33,7 +33,7 @@ html {
   font-size: 16px;
   font-family: 'Comfortaa', sans-serif;
   color: #fff;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -207,4 +207,17 @@ button:focus {
 
 .links-btn-menu_link img {
   max-width: 25px;
+}
+
+.fade-in-image {
+  animation: 1s fadeIn linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

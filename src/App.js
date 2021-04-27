@@ -1,4 +1,6 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import { withNamespaces } from 'react-i18next'
+import { useCookies } from 'react-cookie'
 
 import AppContext from './context/appContext'
 import { About } from './components/About/About'
@@ -15,14 +17,37 @@ import footImg from './resources/img/footer.png'
 
 import './resources/app.css'
 
-export const App = () => {
+function App({ t }) {
+  const [cookies] = useCookies(['zlang'])
+
   const appContext = useContext(AppContext)
-  const { locale, setChangeLocal } = appContext
+  const { lang, changeLang } = appContext
 
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const mouseMoveRight = (e) => {
+    const pageX = e.clientX - window.innerWidth / 2,
+      pageY = e.clientY - window.innerHeight / 2
+    e.target.style.transform =
+      'translateX(' + pageX / 25 + '%) translateY(-' + pageY / 25 + '%)'
+  }
+
+  const mouseMoveLeft = (e) => {
+    const pageX = e.clientX - window.innerWidth / 2,
+      pageY = e.clientY - window.innerHeight / 2
+    e.target.style.transform =
+      'translateX(' + pageX / 50 + '%) translateY(-' + pageY / 50 + '%)'
+  }
+
+  useEffect(() => {
+    if (Object.keys(cookies).includes('zlang') && cookies.zlang !== lang) {
+      changeLang(cookies.zlang)
+    }
+    // eslint-disable-next-line
+  }, [])
+
   return (
-    <div className='app'>
+    <div className='app fade-in-image'>
       <div className='menu-btn-group'>
         <button
           className='btn-menu-action'
@@ -64,28 +89,40 @@ export const App = () => {
       <div className='land'>
         <div className='btn-group-language'>
           <button
-            className={locale === 'uk' ? 'active' : 'notactive'}
-            onClick={() => setChangeLocal('uk')}
+            className={lang === 'uk' ? 'active' : 'notactive'}
+            onClick={() => changeLang('uk')}
           >
             Uk
           </button>
           <button
-            className={locale === 'en' ? 'active' : 'notactive'}
-            onClick={() => setChangeLocal('en')}
+            className={lang === 'en' ? 'active' : 'notactive'}
+            onClick={() => changeLang('en')}
           >
             En
           </button>
         </div>
         <img className='land-logo' src={logoImg} alt='Zebra lounge' />
 
-        <img className='land-leaf-decor-right' src={rightLeafImg} alt='' />
-        <img className='land-leaf-decor-left' src={leftLeafImg} alt='' />
+        <img
+          className='land-leaf-decor-right'
+          onMouseMove={mouseMoveRight}
+          src={rightLeafImg}
+          alt=''
+        />
+        <img
+          className='land-leaf-decor-left'
+          onMouseMove={mouseMoveLeft}
+          src={leftLeafImg}
+          alt=''
+        />
       </div>
 
-      <About />
-      <BarMenu />
-      <Contact />
+      <About t={t} />
+      <BarMenu t={t} />
+      <Contact t={t} />
       <img className='footer' src={footImg} alt='Hero leaf' />
     </div>
   )
 }
+
+export default withNamespaces()(App)

@@ -76,6 +76,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .contact {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (max-width: 505px) {
   .contact-txt {
     height: fit-content;

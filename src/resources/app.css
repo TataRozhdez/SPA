@@ -13,10 +13,17 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .land-logo {
   width: 52.361vw;
+  animation: 2s fadeIn linear;
 }
 
 .btn-group-language {
@@ -62,45 +69,61 @@
   right: -10%;
   left: -2%;
   width: 110vw;
+  animation: 2s fadeIn linear;
 }
 
-@media (max-width: 1100px) {
-  .land-leaf-decor-left,
-  .land-leaf-decor-right {
-    width: 28.9vw;
-  }
+.land-leaf-decor-left {
+  bottom: -14%;
+}
 
-  .land-leaf-decor-left {
-    bottom: -10%;
-  }
+.land-leaf-decor-right {
+  bottom: -17%;
+}
 
-  .land-leaf-decor-right {
-    bottom: -14%;
+@media (max-width: 1371px) {
+  .footer {
+    left: -6%;
+    width: 106vw;
+  }
+}
+
+@media (max-width: 1340px) {
+  .footer {
+    left: -7%;
+    width: 110vw;
+  }
+}
+
+@media (max-width: 1110px) {
+  .footer {
+    left: -18%;
+    width: 118vw;
   }
 }
 
 @media (max-width: 961px) {
   .land-logo {
-    width: 80vw;
+    width: 63vw;
+  }
+
+  .footer {
+    bottom: 0;
+    left: -2%;
+    width: 110vw;
   }
 }
 
 @media (max-width: 780px) {
   .land-leaf-decor-left,
   .land-leaf-decor-right {
-    width: 36.9vw;
+    width: 30.9vw;
   }
+
+  .land-leaf-decor-left {
+    opacity: 0.9;
+  }
+
   .land-logo {
     width: 80vw;
-  }
-}
-
-@media (max-width: 505px) {
-  .land-leaf-decor-left {
-    /* bottom: -15%; */
-  }
-
-  .land-leaf-decor-right {
-    /* bottom: -11%; */
   }
 }

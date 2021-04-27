@@ -5,7 +5,7 @@ export const appReducer = (state, action) => {
     case SET_LANGUAGE:
       return {
         ...state,
-        locale: action.payload,
+        lang: action.payload,
       }
     default:
       return state

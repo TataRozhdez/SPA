@@ -9,7 +9,7 @@ import slide26 from '../../resources/img/slide2-6.png'
 import slide27 from '../../resources/img/slide2-7.png'
 import './BarMenu.css'
 
-export const BarMenu = () => {
+export const BarMenu = ({ t }) => {
   const screenWidth = window.screen.width
 
   let slidesToShow = 3
@@ -45,7 +45,7 @@ export const BarMenu = () => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        переглянути меню
+        {t('menu')}
       </a>
     </div>
   )

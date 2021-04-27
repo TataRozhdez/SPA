@@ -71,3 +71,9 @@
     margin-bottom: 2rem;
   }
 }
+
+@media (max-width: 670px) {
+  .about {
+    padding-top: 1.86rem;
+  }
+}
