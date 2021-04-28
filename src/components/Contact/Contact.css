@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .contact-txt {
@@ -49,6 +49,59 @@
   width: 2rem;
   max-height: 32px;
   margin-right: 1.5rem;
+}
+
+.footer-1,
+.footer-2,
+.footer-3,
+.footer-5 {
+  position: absolute;
+  animation: 2s fadeIn linear;
+  overflow: hidden;
+}
+
+.footer-1 {
+  left: -22%;
+  bottom: 0;
+  z-index: -1;
+  height: 800px;
+}
+
+.footer-1 img {
+  transform: rotate(116deg) translate(3%, 0);
+}
+
+.footer-2 {
+  left: -5%;
+  bottom: 0;
+  z-index: -2;
+  height: 600px;
+}
+
+.footer-2 img {
+  transform: rotate(90deg) translate(19%, 0);
+}
+
+.footer-3 {
+  left: 10%;
+  bottom: 0;
+  z-index: -1;
+  height: 600px;
+}
+
+.footer-3 img {
+  transform: rotate(79deg) translate(10%, 0);
+}
+
+.footer-5 {
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  height: 800px;
+}
+
+.footer-5 img {
+  transform: rotate(79deg) translate(14%, -17%);
 }
 
 @media (max-width: 961px) {

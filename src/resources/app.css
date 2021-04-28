@@ -59,17 +59,10 @@
 .land-leaf-decor-left,
 .land-leaf-decor-right {
   min-width: 162px;
-  z-index: 5;
+  max-width: 1rem !important;
+  transition: transform 0.3s linear;
+  z-index: 10;
   width: 21.9vw;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  right: -10%;
-  left: -2%;
-  width: 110vw;
-  animation: 2s fadeIn linear;
 }
 
 .land-leaf-decor-left {
@@ -80,36 +73,9 @@
   bottom: -17%;
 }
 
-@media (max-width: 1371px) {
-  .footer {
-    left: -6%;
-    width: 106vw;
-  }
-}
-
-@media (max-width: 1340px) {
-  .footer {
-    left: -7%;
-    width: 110vw;
-  }
-}
-
-@media (max-width: 1110px) {
-  .footer {
-    left: -18%;
-    width: 118vw;
-  }
-}
-
 @media (max-width: 961px) {
   .land-logo {
     width: 63vw;
-  }
-
-  .footer {
-    bottom: 0;
-    left: -2%;
-    width: 110vw;
   }
 }
 

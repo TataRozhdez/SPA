@@ -1,4 +1,5 @@
 import React from 'react'
+import leafImg from '../../resources/img/leaf.png'
 import phoneImg from '../../resources/img/phone.svg'
 import mapImg from '../../resources/img/map.svg'
 import facebookImg from '../../resources/img/facebook.svg'
@@ -65,6 +66,19 @@ export const Contact = ({ t }) => {
         className='google-maps'
         dangerouslySetInnerHTML={{ __html: iframe }}
       />
+
+      <div className='footer-1'>
+        <img src={leafImg} alt='footer leaf' />
+      </div>
+      <div className='footer-2'>
+        <img src={leafImg} alt='footer leaf' />
+      </div>
+      <div className='footer-3'>
+        <img src={leafImg} alt='footer leaf' />
+      </div>
+      <div className='footer-5'>
+        <img src={leafImg} alt='footer leaf' />
+      </div>
     </div>
   )
 }
