@@ -54,57 +54,99 @@
 .footer-1,
 .footer-2,
 .footer-3,
-.footer-5 {
+.footer-4 {
   position: absolute;
   animation: 2s fadeIn linear;
   overflow: hidden;
+  height: 600px;
 }
 
 .footer-1 {
-  left: -22%;
+  left: 0;
   bottom: 0;
   z-index: -1;
-  height: 800px;
 }
 
 .footer-1 img {
-  transform: rotate(116deg) translate(3%, 0);
+  transform: rotate(8deg) translate(-24%, 22%);
 }
 
 .footer-2 {
-  left: -5%;
+  left: 6%;
   bottom: 0;
   z-index: -2;
-  height: 600px;
 }
 
 .footer-2 img {
-  transform: rotate(90deg) translate(19%, 0);
+  transform: rotate(14deg) translate(7%, 33%);
+  filter: blur(2px);
 }
 
 .footer-3 {
-  left: 10%;
+  right: 9%;
   bottom: 0;
   z-index: -1;
-  height: 600px;
 }
 
 .footer-3 img {
-  transform: rotate(79deg) translate(10%, 0);
+  transform: rotate(-23deg) translate(0%, 21%);
+  filter: blur(2px);
 }
 
-.footer-5 {
+.footer-4 {
   right: 0;
   bottom: 0;
-  z-index: -2;
-  height: 800px;
+  max-width: 47vw;
 }
 
-.footer-5 img {
-  transform: rotate(79deg) translate(14%, -17%);
+.footer-4 img {
+  transform: rotate(-10deg) translate(30%, 16%);
+}
+
+@media (max-width: 1545px) {
+  .footer-4 {
+    z-index: -1;
+  }
+  .footer-4 img {
+    transform: rotate(16deg) translate(30%, 16%);
+  }
+  .footer-3 {
+    right: 21%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 961px) {
+  .footer-1 {
+    height: 83.247vw;
+    filter: blur(3px);
+  }
+
+  .footer-1 img {
+    transform: rotate(29deg) translate(-28%, 22%);
+  }
+
+  .footer-3 {
+    right: 26%;
+  }
+
+  .footer-3 img {
+    transform: rotate(0deg) translate(0%, 21%);
+  }
+
+  .footer-4 {
+    max-width: 59vw;
+  }
+
+  .footer-4 img {
+    transform: rotate(0deg) translate(4%, 16%);
+  }
+
   .contact {
     flex-direction: column;
     margin-bottom: 5rem;
@@ -124,14 +166,44 @@
 }
 
 @media (max-width: 769px) {
+  .footer-3 {
+    right: 10%;
+  }
+
+  .footer-3 img {
+    transform: rotate(7deg) translate(0%, 21%);
+  }
+
   .google-maps {
     height: 200px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 757px) {
   .contact {
     margin-bottom: 2rem;
+  }
+
+  .footer-1 img {
+    transform: rotate(-4deg) translate(-32%, -6%);
+  }
+}
+
+@media (max-width: 557px) {
+  .footer-1 {
+    height: 600px;
+  }
+
+  .footer-1 img {
+    transform: rotate(14deg) translate(-42%, 19%);
+  }
+
+  .footer-3 {
+    right: -11%;
+  }
+
+  .footer-4 img {
+    transform: rotate(-11deg) translate(-16%, 5%);
   }
 }
 
@@ -153,5 +225,17 @@
 
   .contact-txt-icon {
     width: 1.5rem;
+  }
+
+  @media (max-width: 420px) {
+    .footer-3 img {
+      transform: rotate(10deg) translate(18%, 21%);
+    }
+  }
+
+  @media (max-width: 375px) {
+    .footer-4 {
+      max-width: 78vw;
+    }
   }
 }

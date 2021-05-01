@@ -59,7 +59,6 @@
 .land-leaf-decor-left,
 .land-leaf-decor-right {
   min-width: 162px;
-  max-width: 1rem !important;
   transition: transform 0.3s linear;
   z-index: 10;
   width: 21.9vw;
