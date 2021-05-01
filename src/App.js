@@ -11,8 +11,8 @@ import { Logo } from './components/Logo/Logo'
 import mapImg from './resources/img/map.svg'
 import instaImg from './resources/img/insta.svg'
 import phoneImg from './resources/img/phone.svg'
-import rightLeafImg from './resources/img/right-leaf.png'
-import leftLeafImg from './resources/img/left-leaf.png'
+import rightLeafImg from './resources/img/right-leaf.webp'
+import leftLeafImg from './resources/img/left-leaf.webp'
 
 import './resources/app.css'
 

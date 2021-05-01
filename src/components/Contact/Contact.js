@@ -1,5 +1,5 @@
 import React from 'react'
-import leafImg from '../../resources/img/leaf.png'
+import leafImg from '../../resources/img/leaf.webp'
 import phoneImg from '../../resources/img/phone.svg'
 import mapImg from '../../resources/img/map.svg'
 import facebookImg from '../../resources/img/facebook.svg'

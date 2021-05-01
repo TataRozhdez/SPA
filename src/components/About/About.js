@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
-import slide11 from '../../resources/img/slide1-1.jpg'
-import slide12 from '../../resources/img/slide1-2.jpg'
-import slide13 from '../../resources/img/slide1-3.jpg'
+import slide11 from '../../resources/img/slide1-1.webp'
+import slide12 from '../../resources/img/slide1-2.webp'
+import slide13 from '../../resources/img/slide1-3.webp'
 import './About.css'
 
 export const About = ({ t }) => {

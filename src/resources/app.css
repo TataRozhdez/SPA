@@ -6,7 +6,7 @@
 }
 
 .land {
-  background: center / cover no-repeat url('./img/background.jpg');
+  background: center / cover no-repeat url('./img/background.webp');
   width: 100vw;
   height: 97.8vh;
   display: flex;
@@ -46,13 +46,13 @@
 
 .land-leaf-decor-right {
   position: absolute;
-  bottom: -15%;
+  bottom: -10%;
   right: 0;
 }
 
 .land-leaf-decor-left {
   position: absolute;
-  bottom: -15%;
+  bottom: -10%;
   left: 0;
 }
 
@@ -62,14 +62,7 @@
   transition: transform 0.3s linear;
   z-index: 10;
   width: 21.9vw;
-}
-
-.land-leaf-decor-left {
-  bottom: -14%;
-}
-
-.land-leaf-decor-right {
-  bottom: -17%;
+  max-width: 500px;
 }
 
 @media (max-width: 961px) {
